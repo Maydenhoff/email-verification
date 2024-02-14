@@ -6,6 +6,11 @@ class User(BaseModel):
     user_name: str
     email: str
     password: str
+    cod: str = None
+    validation: str = None
+    fecha_limite: str = None
+    
+
 
     class Config:
         json_schema_extra = {
